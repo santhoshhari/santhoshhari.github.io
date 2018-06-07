@@ -2,28 +2,31 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sri Santhosh Hari - Projects</title>
-
+    <title>Sri Santhosh Hari - Portfolio</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="/favicon.ico?">
-
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120539235-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'UA-120539235-1');
+    </script>
   </head>
 
   <body id="page-top">
@@ -55,28 +58,28 @@
     </nav-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Sri Santhosh Hari</a>
+        <a class="navbar-brand" href="#" onclick="gtag('event', 'reference', {'event_category' : 'navigation', 'event_label' : 'Name', 'value' : 10 });">Sri Santhosh Hari</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="#" onclick="gtag('event', 'reference', {'event_category' : 'navigation', 'event_label' : 'Home', 'value' : 10 });">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about" onclick="gtag('event', 'reference', {'event_category' : 'navigation', 'event_label' : 'About', 'value' : 10 });">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#projects" onclick="gtag('event', 'reference', {'event_category' : 'navigation', 'event_label' : 'Projects', 'value' : 10 });">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
+              <a class="nav-link" href="#experience" onclick="gtag('event', 'reference', {'event_category' : 'navigation', 'event_label' : 'Experience', 'value' : 10 });">Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact" onclick="gtag('event', 'reference', {'event_category' : 'navigation', 'event_label' : 'Contact', 'value' : 10 });">Contact</a>
             </li>
           </ul>
         </div>
@@ -104,7 +107,7 @@
             <h2>About Me</h2>
             <p class="lead mb-5">I'm a graduate student in the data sciene program at the <a href="https://www.usfca.edu/" target="_blank">University of San Francisco</a>. I have over 4 years of professional experience working with data and delivering business value. I'm interested in working at the intersection of data science (machine learning + statistics) and product development.</p>
             <p class="lead mb-5">Football enthusiast and an avid <a href="https://www.realmadrid.com/en" target="_blank">Madrid</a> supporter.</p>
-            <a class="btn btn-dark btn-xl js-scroll-trigger" href="https://drive.google.com/open?id=1yb6VWUkvq_lP8T21YtmLLtKh5K6H--EC" target="_blank">Resume</a>
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="https://drive.google.com/open?id=1yb6VWUkvq_lP8T21YtmLLtKh5K6H--EC" target="_blank" onclick="gtag('event', 'reference', {'event_category' : 'external', 'event_label' : 'Resume', 'value' : 10 });">Resume</a>
           </div>
         </div>
       </div>
@@ -121,7 +124,7 @@
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6">
-            <a class="portfolio-item" href="https://santhoshhari.github.io/sample-size-calculator/" target="_blank">
+            <a class="portfolio-item" href="https://santhoshhari.github.io/sample-size-calculator/" target="_blank" onclick="gtag('event', 'reference', {'event_category' : 'projects', 'event_label' : 'sample_size', 'value' : 10 });">
               <span class="caption">
                 <span class="caption-content">
                   <h2>A/B Testing</h2>
@@ -132,7 +135,7 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="https://santhoshhari.github.io/simulated_annealing/" target="_blank">
+            <a class="portfolio-item" href="https://santhoshhari.github.io/simulated_annealing/" target="_blank" onclick="gtag('event', 'reference', {'event_category' : 'projects', 'event_label' : 'sim_annealing', 'value' : 10 });">
               <span class="caption">
                 <span class="caption-content">
                   <h2>Parameter Tuning</h2>
@@ -267,24 +270,24 @@
         <ul class="list-inline mb-5">
           </li>
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/in/santhoshhari/" target="_blank">
+            <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/in/santhoshhari/" target="_blank" onclick="gtag('event', 'reference', {'event_category' : 'social', 'event_label' : 'LinkedIn', 'value' : 10 });">
               <i class="fa fa-linkedin fa fa-fw"></i>
               <!--i class="icon-social-linkedin"></i-->
             </a>
           </li>
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="https://github.com/santhoshhari" target="_blank">
+            <a class="social-link rounded-circle text-white" href="https://github.com/santhoshhari" target="_blank" onclick="gtag('event', 'reference', {'event_category' : 'social', 'event_label' : 'Github', 'value' : 10 });">
               <i class="fa fa-github fa fa-fw"></i>
               <!--i class="icon-social-github"></i-->
             </a>
           </li>
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="mailto:santhosh.sri8@gmail.com" target="_blank">
+            <a class="social-link rounded-circle text-white" href="mailto:santhosh.sri8@gmail.com" target="_blank" onclick="gtag('event', 'reference', {'event_category' : 'social', 'event_label' : 'Email', 'value' : 10 });">
               <i class="fa fa-envelope fa fa-fw"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/srisanthosh" target="_blank">
+            <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/srisanthosh" target="_blank" onclick="gtag('event', 'reference', {'event_category' : 'social', 'event_label' : 'Twitter', 'value' : 10 });">
               <i class="fa fa-twitter fa fa-fw"></i>
               <!--i class="icon-social-twitter"></i-->
             </a>
