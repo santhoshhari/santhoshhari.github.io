@@ -30,6 +30,42 @@
 
     gtag('config', 'UA-120539235-1');
   </script>
+  <!-- Google Analytics Content Experiment code -->
+  <script>
+    function utmx_section() {}
+
+    function utmx() {}(function() {
+      var
+        k = '176732540-0',
+        d = document,
+        l = d.location,
+        c = d.cookie;
+      if (l.search.indexOf('utm_expid=' + k) > 0) return;
+
+      function f(n) {
+        if (c) {
+          var i = c.indexOf(n + '=');
+          if (i > -1) {
+            var j = c.
+            indexOf(';', i);
+            return escape(c.substring(i + n.length + 1, j < 0 ? c.length : j))
+          }
+        }
+      }
+      var x = f('__utmx'),
+        xx = f('__utmxx'),
+        h = l.hash;
+      d.write(
+        '<sc' + 'ript src="' + 'http' + (l.protocol == 'https:' ? 's://ssl' :
+          '://www') + '.google-analytics.com/ga_exp.js?' + 'utmxkey=' + k +
+        '&utmx=' + (x ? x : '') + '&utmxx=' + (xx ? xx : '') + '&utmxtime=' + new Date().valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
+        '" type="text/javascript" charset="utf-8"><\/sc' + 'ript>')
+    })();
+  </script>
+  <script>
+    utmx('url', 'A/B');
+  </script>
+  <!-- End of Google Analytics Content Experiment code -->
 </head>
 
 <body id="page-top">
@@ -80,9 +116,7 @@
             <p class="lead mb-5">I'm a graduate student in the data science program at the <a href="https://www.usfca.edu/" target="_blank" onclick="gtag('event', 'click', {'event_category' : 'about_me', 'event_label' : 'USF', 'value' : 10 });" onmouseover="gtag('event', 'hover', {'event_category':'about_me', 'event_label':'USF', 'value':1})">University of San Francisco</a>.
               A lifelong learner, problem solver, and Mr. Fix-It. I have over 4 years of professional experience working with data and delivering business value. I enjoy all aspects of machine learning from problem definition, data exploration to model
               building and insight generation. Passionate about data-enabled decision making.</p>
-            <p class="lead mb-5">I'm enthisiastic about all things Cricket/ Football. An avid supporter of <a href="https://www.realmadrid.com/en" target="_blank" onclick="gtag('event', 'click', {'event_category' : 'about_me', 'event_label' : 'Madrid', 'value' : 10 });"
-                onmouseover="gtag('event', 'hover', {'event_category':'about_me', 'event_label':'Madrid', 'value':1})">Real Madrid</a> and the <a href="https://www.wikiwand.com/en/India_national_cricket_team" target="_blank" onclick="gtag('event', 'click', {'event_category' : 'about_me', 'event_label' : 'India', 'value' : 10 });"
-                onmouseover="gtag('event', 'hover', {'event_category':'about_me', 'event_label':'India', 'value':1})">Men in Blue</a>.</p>
+            <p class="lead mb-5">I'm enthisiastic about all things Cricket/ Football. An avid supporter of <a href="https://www.realmadrid.com/en" target="_blank" onclick="gtag('event', 'click', {'event_category' : 'about_me', 'event_label' : 'Madrid', 'value' : 10 });" onmouseover="gtag('event', 'hover', {'event_category':'about_me', 'event_label':'Madrid', 'value':1})">Real Madrid</a>              and the <a href="https://www.wikiwand.com/en/India_national_cricket_team" target="_blank" onclick="gtag('event', 'click', {'event_category' : 'about_me', 'event_label' : 'India', 'value' : 10 });" onmouseover="gtag('event', 'hover', {'event_category':'about_me', 'event_label':'India', 'value':1})">Men in Blue</a>.</p>
           </div>
         </div>
         <ul class="list-inline mb-5">
@@ -171,8 +205,8 @@
           </span>
           <img class="img-fluid" src="img/solid-blue.jpg" alt="">
         </a>
+          </div>
         </div>
-      </div>
 
         <h3 class="mb-5 text-center">Miscellaneous</h3>
         <div class="row no-gutters">
