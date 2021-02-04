@@ -133,7 +133,7 @@ We can infer from the above example that vec1 and vec2 are more likely to be sim
 
 The intuition behind this idea is that if two points are aligned completely, i.e., have perfect correlation from origin, they will be in the same hash bin. Similarly, two points separated by 180 degrees will be in different bins and two points 90 degrees apart have 50% probability to be in same bins.
 
-In addition, because of the randomness, it is not likely that all similar items are grouped correctly. To overcome this limitaion a common practice is to create multiple hash tables and consider an observation `a` to be similar to `b`, if they are in same bin in atleast one of the tables. It is also worth noting that multiple tables generalize the high dimensional space better and amortize the contribution of bad random vectors.
+In addition, because of the randomness, it is not likely that all similar items are grouped correctly. To overcome this limitation a common practice is to create multiple hash tables and consider an observation `a` to be similar to `b`, if they are in same bin in atleast one of the tables. It is also worth noting that multiple tables generalize the high dimensional space better and amortize the contribution of bad random vectors.
 
 In practise, the number of hash tables and size of the hash value (k) are tuned to adjust the trade-off between recall and precision.
 
